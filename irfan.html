@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>     -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        background-image: url(https://wallpapers.com/images/hd/best-desktop-pc-background-11un3v8kchcfqdv8.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 26%;
+      }
+      .name {
+        background-image: none;
+        text-align: center;
+        width: 400px;
+        padding: 30px;
+        margin-left: 60%;
+        color: snow;
+        animation-name: drop;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      h1 {
+        margin-top: 30%;
+        font-size: 4rem;
+        background-image: none;
+      }
+
+      @keyframes drop {
+        0% {
+          position: absolute;
+          top: -10%;
+        }
+        25% {
+          position: absolute;
+          top: 20%;
+        }
+        50% {
+          position: absolute;
+          top: 30%;
+        }
+        75% {
+          position: absolute;
+          top: 40%;
+        }
+        100% {
+          position: absolute;
+          top: 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="name" data-aos="zoom-in" data-aos-duration="1500">
+      <h1>Wellcome to my page</h1>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 4000,
+      });
+    </script>
+  </body>
+</html>
